@@ -1,0 +1,17 @@
+1.p==&i; 
+compara o endereço de p e verifica se é igual ao endereço de i, no caso eles tem o mesmo endereço(verdadeiro).
+
+2.*p-*q; 
+como estamos "apontando (*)" estamos pegando o valor de 'p' que aponta pra 'i' e 'q' aponta para 'j'. logo teremos 3(i)-5(j)= -2
+
+3. **&p; 
+'&p' retorna o endereço de p, que é o endereço de i (porque p está apontando para i).
+Em seguida, ** desreferencia esse endereço duas vezes, o que nos dá o valor de i.
+Portanto, o valor dessa expressão será i, que é 3.
+
+4. ◦ 3 - *p/(*q) + 7;
+3 - *p/(*q) + 7; = 10.
+*p=3 
+*q=5
+a divisão de 3/5 resultando em um inteiro da 0.
+logo o resultado é 3-0+7=10.

@@ -1,0 +1,15 @@
+*q = &j;
+
+Ilegal. Estamos tentando atribuir um endereço a um valor inteiro (*q é um inteiro), o que não é permitido. A sintaxe correta seria q = &j;.
+
+i = (*&)j;
+
+Ilegal. Esta expressão não é válida em C. (*&) não é uma operação válida em C.
+
+q = *p;
+
+Ilegal. Estamos tentando atribuir o valor apontado por p a q, mas q é um ponteiro e *p é o valor apontado por p, não um endereço. A sintaxe correta seria *q = *p;.
+
+i = (*p)++ + *q;
+
+Ilegal. O operador de incremento (++) não pode ser usado com um valor apontado por um ponteiro. Para incrementar o valor apontado por p, a expressão correta seria (*p)++. Além disso, o valor apontado por q pode não ser modificado em algumas situações, então essa expressão pode não ser permitida, dependendo do contexto.
