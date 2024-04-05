@@ -1,0 +1,1 @@
+da erro, não se pode definir as structs dentro da definição da struct, tem que realizar separado, a função main não está definida, ou seja faltou o "int".

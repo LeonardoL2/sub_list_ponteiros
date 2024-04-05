@@ -1,0 +1,4 @@
+p= mat+1, está dizendo que a variavel p é o valor de mat inclementado de 1.
+p=mat está dizendo que a variavel p é igual ao valor da variavel mat.
+x=(*mat) está dizendo que a variavel x recebe o endereço e o valor da variavel mat que lhe foi apontada.
+todas são validas.

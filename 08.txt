@@ -1,0 +1,6 @@
+o primeiro mostra os valores da variavel vet
+vet[1]=4
+vet[2]=9
+vet[3]=13
+
+o outro mostra o endereço de cada um deles, onde eles estão alocados na memoria.

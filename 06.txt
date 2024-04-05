@@ -1,0 +1,1 @@
+o primeiro *(pulo+2) o pulo mais 2 leva ao vetor pulo 3 e o apontador verifica o valor de "pulo3"/(pulo+2)
