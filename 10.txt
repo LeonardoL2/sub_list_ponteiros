@@ -1,0 +1,3 @@
+apareceu erros, você não pode inicializar um ponteiro com um número literal como 3. Você deve apontá-lo para o endereço de uma variável.
+Se um ponteiro aponta para um valor constante, você não pode alterar esse valor.
+A função main() em C deve retornar um int para funcionar.

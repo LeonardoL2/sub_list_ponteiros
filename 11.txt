@@ -1,0 +1,25 @@
+em char
+tipo x[0] 4092
+tipo x[1] 4093
+tipo x[2] 4094
+tipo x[3] 4095
+
+em int
+tipo x[0] 4092
+tipo x[1] 4094
+tipo x[2] 4096
+tipo x[3] 4098
+
+em float
+tipo x[0] 4092
+tipo x[1] 4096
+tipo x[2] 4100
+tipo x[3] 4104
+
+em double
+tipo x[0] 4092
+tipo x[1] 4100
+tipo x[2] 4108
+tipo x[3] 4116
+
+o programa só me mostrou cd uma delas em bloco de 4.

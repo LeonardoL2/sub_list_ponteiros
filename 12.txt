@@ -1,0 +1,11 @@
+os comandos válidos são: 1, 4, 5 e 8. Os comandos inválidos são: 2, 3, 6 e 7
+existem alguns erros de sintex.
+
+aloha[2] = value;: Válido. Esta linha atribui o valor da variável value ao terceiro elemento (índice 2) do array aloha. Em C, os arrays são indexados a partir de zero.
+scanf("%f", &aloha);: Inválido. scanf espera um ponteiro para um float como argumento para armazenar o valor lido. No entanto, aloha é um array e usar apenas aloha resulta no ponteiro para o primeiro elemento do array. A forma correta seria scanf("%f", &aloha[i]); onde i é o índice do elemento que você deseja ler.
+aloha = "value";: Inválido. Em C, não é possível atribuir diretamente uma string a um array após sua declaração. Além disso, aloha é um array de floats e "value" é uma string literal.
+printf("%f", aloha);: Inválido. O especificador de formato %f é usado para imprimir um único float. Para imprimir um elemento do array aloha, você deve especificar o índice, como printf("%f", aloha[0]);.
+coisas[4][4] = aloha[3];: Válido. Esta linha atribui o valor do quarto elemento do array aloha ao elemento na quinta linha e quinta coluna (índices 4, 4) da matriz coisas, assumindo que coisas é uma matriz 5x5 ou maior e que os tipos de dados são compatíveis.
+coisas[5] = aloha;: Inválido. Em C, não é possível atribuir diretamente um array inteiro a outro. Além disso, se coisas é uma matriz, coisas[5] se refere a um array (a sexta linha da matriz), e você não pode atribuir aloha a isso diretamente.
+pf = value;: Inválido. pf é um ponteiro para float e value é um float. A atribuição direta é inválida porque pf espera um endereço. A forma correta seria pf = &value;, que atribui o endereço de value a pf.
+pf = aloha;: Válido. Esta linha é válida porque pf é um ponteiro para float e aloha é um array de floats. Em C, o nome de um array pode ser usado como um ponteiro para o seu primeiro elemento.

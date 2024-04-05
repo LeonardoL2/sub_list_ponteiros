@@ -1,0 +1,46 @@
+um memory leak é quando utiliza um programa para alocar memoria e não libera essa memoria, fazendo com que haja perda de memoria.
+
+Exemplo 1: Alocação de memória sem liberação
+c
+Copy code
+#include <stdlib.h>
+
+int main() {
+    while (1) {
+        int *ptr = (int *)malloc(sizeof(int));
+    }
+    return 0;
+}
+
+aqui temos um loop de memoria onde o malloc é inclementado porém n temos um free para liberar essa memoria.
+
+Exemplo 2: Perda de referência para memória alocada
+c
+Copy code
+#include <stdlib.h>
+
+int *allocate_memory() {
+    int *ptr = (int *)malloc(sizeof(int));
+    return ptr;
+}
+
+int main() {
+    int *ptr = allocate_memory();
+    return 0;
+}
+
+Neste programa, a função allocate_memory() aloca um bloco de memória dinâmica e retorna um ponteiro para ele. No entanto, o programa principal não armazena o ponteiro retornado em nenhuma variável, resultando em uma perda de referência para a memória alocada. Como resultado, não há como liberar essa memória posteriormente
+
+Exemplo 3: Falha na liberação de memória
+c
+Copy code
+#include <stdlib.h>
+
+int main() {
+    int *ptr = (int *)malloc(sizeof(int));
+    ptr = NULL; // Liberar a memória, mas perda do endereço de memória original
+    free(ptr); // Tentativa de liberar memória já liberada
+    return 0;
+}
+
+Neste programa, um bloco de memória dinâmica é alocado e, em seguida, o ponteiro é definido como NULL, resultando na perda do endereço de memória original. Quando free(ptr) é chamado, tenta-se liberar a memória, mas o argumento passado é NULL, o que resulta em comportamento indefinido e pode causar um erro de tempo de execução ou falha do programa. Isso mostra como a liberação incorreta de memória pode levar a um memory leak.
