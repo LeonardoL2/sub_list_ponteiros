@@ -1,0 +1,27 @@
+a) p1 acessa o endereço de valor com &valor e *p1=20 acessa o valor dentro da variavel valor e altera para 20.
+
+b)o mesmo caso de p1, ele tem acesso ao endereço e substitui o valor pela do apontado de p2.
+
+c)o esperado era ser mostrado "ponteiros" porém isso não acontece, apenas mostra p. pois ele esta associado a acessar a possição 0 da variavel nome.
+
+d) mesmo caso do anterior porem agora associado ao 4, mostrando assim a caractere 'e', e o esperado era ponteiros.
+
+e)é mostrado o 'p' porque quando aponto p3 significa que tenho acesso ao endereço da variavel nome.
+
+f)é mostrado o 'e' porque quando aponto p3 significa que tenho acesso ao endereço da variavel nome e o 'e' porque foi atibuido a ele mostrar o valor nome[5].
+
+g)p3-- esta regredindo uma posição, na questão 'f' ele apontava para nome[5] 'e' e regrediu um caractere indo para 't'.
+
+h)mostra que idade tem o conteudo de p4 e p4 tem o conteudo de vetor, logo mostrar o primeiro vetor[0]=31.
+
+i) mesmo caso da passada porém agora foi atribuido a p5= p4+1 ou seja a posição 2 do meu vetor, e dizendo que a variavel idade tem acesso ao conteudo de p5 o que será mostrado é 45.
+
+j) agora dizemos que p4 =p5+1 ou seja p5(p4+1+1) e idade aponta para o conteudo de p4, ou seja o acesso ao vetor[3]=27.
+
+l) agora estamos regredindo 2 de p4, se antes ele tinha (p4+1+10 agora ele é só (p4), ou seja acessa o vetor[0]=31. e name aponta para o conteudo de p4.
+
+m) ele mostra o endereço do vetor[2] e regredide 1, ou seja mostrando agora o endereço do vetor[1].
+
+n) agora recebe o encremento, antes p5 tinha acesso ao endereço do vetor[1] e com o encremento, agora tem o endereço do vetor[2].
+
+

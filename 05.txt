@@ -1,0 +1,11 @@
+é criado um vet de 5 elementos e uma variavel i que servirar como um loop para acessar o valor de cada elemento de vet, uma variavel i de 0-4 totalizando [5].
+
+o primeiro printf("i = %d",i);: Imprime o valor de i, que varia de 0 a 4.
+
+o segundo printf(" vet[%d] = %.1f",i, vet[i]);: Imprime o valor do elemento i do array vet.
+
+o terceiro printf(" *(f + %d) = %.1f",i, *(f+i));: Imprime o valor apontado por f + i, ou seja, o valor do elemento i do array vet.
+
+o quarto printf(" &vet[%d] = %X",i, &vet[i]);: Imprime o endereço de memória do elemento i do array vet.
+
+o quinto printf(" (f + %d) = %X",i, f+i);: Imprime o endereço de memória apontado por f + i.
