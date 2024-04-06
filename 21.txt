@@ -1,0 +1,1 @@
+a alternativa E, pois ela realiza a liberação da memoria m, porém ela reatribui dizendo que m=n ou seja atribui a variavel m o conteudo de n, e logo em seguida tenta liberar m, porém m tem o endereço de n, ou seja ele perde o endereço de m resultando assim na perda do conteudo.
