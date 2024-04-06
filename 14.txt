@@ -1,0 +1,21 @@
+Um ponteiro para uma função é um ponteiro que armazena o endereço de memória de uma função em vez de armazenar o valor de uma variável. Isso permite que você passe funções como argumentos para outras funções, ou até mesmo retorne funções de outras funções.
+
+#include <stdio.h>
+
+// Definição de uma função
+void hello() {
+    printf("Olá, mundo!\n");
+}
+
+int main() {
+    // Declaração de um ponteiro para função
+    void (*funcao_ptr)();
+
+    // Atribuição do endereço da função 'hello' ao ponteiro
+    funcao_ptr = &hello;
+
+    // Chamada da função através do ponteiro
+    (*funcao_ptr)();
+
+    return 0;
+}
